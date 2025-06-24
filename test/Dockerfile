@@ -1,4 +1,4 @@
-FROM node:16
+FROM registry.access.redhat.com/ubi8/nodejs-16
 
 # Install OpenJDK 17
 RUN apt-get update && apt-get install -y openjdk-17-jdk wget unzip && rm -rf /var/lib/apt/lists/*
