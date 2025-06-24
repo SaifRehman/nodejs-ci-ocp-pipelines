@@ -1,4 +1,4 @@
-FROM docker.io/node:16.0.0
+FROM docker.io/node:16
 
 user root
 # Create app directory
