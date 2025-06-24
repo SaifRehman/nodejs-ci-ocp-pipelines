@@ -12,11 +12,14 @@ spec:
       default: zap-report.html
       description: Name of the generated report
   workspaces:
-    - name: workspace
+    - name: zapws
       description: Workspace to store the ZAP report
   steps:
     - name: zap-baseline
       image: ghcr.io/zaproxy/zaproxy:stable
+      volumeMounts:
+        - name: zapws
+          mountPath: /zap/wrk
       script: |
         #!/bin/sh
         zap-baseline.py -t "$(params.target-url)" -r "$(params.report-file)"

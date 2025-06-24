@@ -151,7 +151,7 @@ spec:
         - name: report-file
           value: $(params.report-file)
       workspaces:
-        - name: zap-output
+        - name: zapws
           workspace: workspace
 
   workspaces:
