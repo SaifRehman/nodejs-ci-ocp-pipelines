@@ -1,0 +1,23 @@
+apiVersion: tekton.dev/v1
+kind: Task
+metadata:
+  name: zap-scan
+spec:
+  params:
+    - name: target-url
+      type: string
+      description: The URL of the application to scan
+    - name: report-file
+      type: string
+      default: zap-report.html
+      description: Name of the generated report
+  workspaces:
+    - name: workspace
+      description: Workspace to store the ZAP report
+  steps:
+    - name: zap-baseline
+      image: ghcr.io/zaproxy/zaproxy:stable
+      script: |
+        #!/bin/sh
+        zap-baseline.py -t "$(params.target-url)" -r "$(params.report-file)"
+        cp /zap/wrk/$(params.report-file) $(workspaces.zap-output.path)/
