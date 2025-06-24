@@ -1,4 +1,4 @@
-FROM docker.io/node:16
+FROM registry.access.redhat.com/ubi8/nodejs-16
 
 user root
 # Create app directory

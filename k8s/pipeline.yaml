@@ -152,7 +152,7 @@ spec:
           value: $(params.report-file)
       workspaces:
         - name: zap-output
-          workspace: shared-data
+          workspace: workspace
 
   workspaces:
     - name: workspace
