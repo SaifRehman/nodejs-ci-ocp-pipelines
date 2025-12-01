@@ -1,7 +1,3 @@
 # nodejs-ci-ocp-pipeline
 
-vvu
-basbuasb
-test
-nnn
-sss
+nasinisnis
