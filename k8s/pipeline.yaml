@@ -6,14 +6,14 @@ spec:
   params:
     - name: target-url
       type: string
-      default: 'http://nodejs-api-dotnetcore.apps.cluster-fqrwp.fqrwp.sandbox1673.opentlc.com'
+      default: 'http://nodejs-api-nodejs.apps.cluster-q27ck.dyn.redhatworkshops.io'
     - name: report-file
       type: string
       default: zap-report.html
     - default: pipelines-nodejs-api
       name: APP_NAME
       type: string
-    - default: 'https://github.com/SaifRehman/nodejs-tekton-openshift'
+    - default: 'https://github.com/SaifRehman/nodejs-ci-ocp-pipelines'
       name: GIT_REPO
       type: string
     - default: main
