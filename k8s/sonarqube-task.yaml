@@ -8,7 +8,7 @@ metadata:
     tekton.dev/tags: "code-quality"
 spec:
   description: |
-    This Task runs a SonarQube scan using the .NET SonarScanner.
+    This Task runs a SonarQube scan for Node.js projects using sonar-scanner.
   workspaces:
     - name: source
       description: The workspace containing the source code to scan

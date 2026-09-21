@@ -6,7 +6,7 @@ spec:
   params:
     - name: target-url
       type: string
-      default: 'http://nodejs-api-nodejs.apps.cluster-q27ck.dyn.redhatworkshops.io'
+      default: 'http://nodejs-api-nodejs.apps.cluster-n7bpg.n7bpg.sandbox1537.opentlc.com'
     - name: report-file
       type: string
       default: zap-report.html
